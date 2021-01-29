@@ -1,0 +1,73 @@
+table_name = 'user_profiles'
+action = 'create'
+[create]
+    [create.id]
+    primary_key = "True"
+    type = "Integer"
+
+    [create.firstname]
+    type = "String"
+
+    [create.lastname]
+    type = "String"
+
+    [create.gender]
+    type = "String"
+    length = "10"
+
+    [create.phone_number]
+    type = "String"
+
+    [create.alternative_phone_number]
+    type = "String"
+
+    [create.zip_code]
+    type = "String"
+
+    [create.street]
+    type = "String"
+
+    [create.address_complement]
+    type = "String"
+
+    [create.house_number]
+    type = "Integer"
+
+    [create.apt_number]
+    type = "Integer"
+
+    [create.city]
+    type = "String"
+
+    [create.state]
+    type = "String"
+
+    [create.created_at]
+    default = "datetime.utcnow"
+    nullable = "False"
+    type = "TIMESTAMP"
+
+    [create.updated_at]
+    nullable = "False"
+    onupdate = "datetime.utcnow"
+    type = "TIMESTAMP"
+
+[relationship]
+
+    [relationship.user]
+    mode = "OneToOne"
+    column = "user_id"
+    table = "users"
+
+    [relationship.country]
+    mode = "OneToOne"
+    column = "country_id"
+    table = "countries"
+
+    [relationship.file]
+    mode = "OneToOne"
+    column = "file_id"
+    table = "files"
+
+
+
