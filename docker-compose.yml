@@ -1,0 +1,10 @@
+version: "3"
+services:
+  database:
+    image: mariadb:10.5
+    environment:
+      - MYSQL_DATABASE=umbaweb
+      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - 3306:3306

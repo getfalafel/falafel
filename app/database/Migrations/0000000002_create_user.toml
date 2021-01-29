@@ -1,0 +1,33 @@
+table_name = 'users'
+action = 'create'
+[create]
+    [create.id]
+    primary_key = "True"
+    type = "Integer"
+
+    [create.username]
+    type = "String"
+    unique = "True"
+    nullable = "False"
+
+    [create.email]
+    type = "String"
+    unique = "True"
+    nullable = "False"
+
+    [create.password]
+    type = "String"
+    nullable = "False"
+
+    [create.lastlogin]
+    type = "TIMESTAMP"
+
+    [create.created_at]
+    default = "datetime.utcnow"
+    nullable = "False"
+    type = "TIMESTAMP"
+
+    [create.updated_at]
+    nullable = "False"
+    onupdate = "datetime.utcnow"
+    type = "TIMESTAMP"

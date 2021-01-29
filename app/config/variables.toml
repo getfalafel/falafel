@@ -1,0 +1,9 @@
+### Global variables
+[default]
+FALAFEL_DIR = '@format {env[PWD]}/'
+VIEWS_DIR = '@format {env[PWD]}/app/resources/views/'
+STATIC_DIR = '@format {env[PWD]}/app/public/'
+MODELS_DIR = 'app/database/Models'
+MIGRATIONS_DIR = 'app/database/Migrations'
+ROUTES_DIR = 'app/http/routes'
+SEEDS_DIR = 'app/database/Seeds'
