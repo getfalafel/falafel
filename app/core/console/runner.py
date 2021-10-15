@@ -1,6 +1,7 @@
 from .server import console
 from .database import migration, model
 from .http import route, controller
+from .tools import helper
 
 
 def run_server(server):
@@ -43,3 +44,9 @@ def create_route(name):
     """
     """
     return route.create_route(name)
+
+def generate_secret_key():
+    """
+    Generate new Secret Key
+    """
+    return helper.generate_secret_key()
