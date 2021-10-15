@@ -11,6 +11,7 @@ def main(shell_arguments):
     """
 
     args = parse_command_line(shell_arguments)
+
     if args.dbmigrate is not None:
         runner.migrate(args.dbmigrate)
 
@@ -35,7 +36,11 @@ def main(shell_arguments):
     elif args.server is not None:
         runner.run_server(args.server)
 
-    return 0
+    elif args.generatekey is not None:
+        runner.generate_secret_key()
+        
+    else:
+        print('Invalid command')
 
 
 def parse_command_line(args):
@@ -65,6 +70,9 @@ def parse_command_line(args):
 
     # Create Routes
     parser.add_argument('-mkroute', '--makeroute', nargs='?', type=str, help='Create a new Route file')
+
+    # Generate a new Secret Key
+    parser.add_argument('-genkey', '--generatekey', nargs='?', type=str, help='Generate a new Secret Key', const='loren')
 
     ###
     args = parser.parse_args()
