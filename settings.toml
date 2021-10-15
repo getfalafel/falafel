@@ -11,8 +11,8 @@ ENV='@format {env[FLASK_ENV]}'
 DB_CONNECTION='mysql+pymysql'
 DB_HOST='localhost'
 DB_PORT='3306'
-DB_DATABASE='umbaweb'
-DB_USERNAME='root'
+DB_DATABASE=''
+DB_USERNAME=''
 DB_PASSWORD=''
 
 ### Mail 
