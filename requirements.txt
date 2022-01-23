@@ -1,1 +1,1 @@
-falafel-fava==0.2
+falafel-fava==0.2.1
