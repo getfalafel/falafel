@@ -18,3 +18,9 @@ __pycache__
 
 # MacOS
 .DS_Store
+
+# npm
+node_modules
+
+.env
+settings.toml

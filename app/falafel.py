@@ -3,9 +3,11 @@ from flask_cors import CORS
 from dynaconf import settings
 from app.core import configuration
 
+static_dir = settings.get("APP_DIR") + settings.get("STATIC_DIR")
+views_dir = settings.get("APP_DIR") + settings.get("VIEWS_DIR")
 
 def construct(**config):
-    app = Flask(__name__, static_folder=settings.get('STATIC_DIR'), template_folder=settings.get('VIEWS_DIR'))
+    app = Flask(__name__, static_folder=static_dir, template_folder=views_dir)
     configuration.init_app(app, **config)
     CORS(app)
     return app

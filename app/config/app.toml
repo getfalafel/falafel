@@ -2,8 +2,9 @@
 EXTENSIONS = [
   "app.core.database:init_app",
   "app.core.configuration:init_app",
-  "app.http.routes.api:init_app",
-  "app.http.routes.web:init_app"
+  "app.core.globals:init_app",
+  "app.http.routes.api_routes:init_app",
+  "app.http.routes.web_routes:init_app",
 ]
 
 [development]

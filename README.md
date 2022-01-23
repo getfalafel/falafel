@@ -12,7 +12,7 @@ The project was created using many amazing projects, such as:
 
 - [Flask:  Micro Framework Web for Python](https://flask.palletsprojects.com/)
 
-- [Jinja: Templating engine](https://jinja.palletsprojects.com/)
+- [Jinja: Template engine](https://jinja.palletsprojects.com/)
 
 - [Werkzeug: WSGI web application library](https://werkzeug.palletsprojects.com/)
 
@@ -20,7 +20,7 @@ The project was created using many amazing projects, such as:
 
 - [Dynaconf: A layered configuration system for Python](https://www.dynaconf.com/)
 
-- Fava: Falafel command-line interface
+- [Fava: Falafel command-line interface](https://pypi.org/project/falafel-fava/#description)
 
   
 
